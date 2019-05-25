@@ -1,0 +1,63 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void ch(){
+
+    int a, b, c,i,j;
+    int result;
+    char y,n;
+    result = 0;
+
+    cout << "Menu: " << endl;
+    cout << "1. Add" << endl;
+    cout << "2. Subtract" << endl;
+    cout << "3. Multiply" << endl;
+    cout << "4. Divide" << endl;
+    cout << "5. Modulus" << endl;
+    cout << endl;
+    cout << "Enter the operation that you want to perform" << endl;
+    cin >> a;
+    cout << endl;
+    cout << "Enter the first number:" << endl;
+    cin >> b;
+    cout << endl;
+    cout << "Enter the second number:" << endl;
+    cin >> c;
+    if (a == 1){
+        result = (b + c);
+    } else if (a == 2) {
+        result = (b - c);
+    } else if (a == 3) {
+        result = (b * c);
+    } else if (a == 4) {
+        result = (b / c);
+    } else if (a ==5){
+        result = (b % c);
+    } else {
+        cout << "Invalid" << endl;
+    }
+    cout << "The result is: " << result << endl;
+
+
+
+}
+
+int main()
+{
+    ch();
+    char j,y,n;
+
+    cout <<"Do you want to continue? (y or n)" << endl;
+    cin >> j;
+
+    if (j == 'y'){
+    ch();
+    } else if (j == 'n') {
+    cout << "thank you";
+    }
+
+    _getch();
+    return 0;
+}
